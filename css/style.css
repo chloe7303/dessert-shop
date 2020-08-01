@@ -58,12 +58,18 @@ body{
 	font-family: 'PingFang TC';
 }
 img{
-	width: 100%;
+	display: block;
+	max-width: 100%;
 	height: auto;
 }
 .container{
 	max-width: 940px;
 	margin: 0 auto;
+}
+@media(max-width:375px){
+	.container{
+		max-width: 375px;
+	}
 }
 .header{
 	display: flex;
@@ -79,8 +85,8 @@ img{
 	}
 	.header_2{
 		display: flex;
-		justify-content: center;
-		padding: 33px 50px;
+		justify-content: space-between;
+		padding: 30px 0px 30px 30px;
 	}
 	.header_2 img{
 		height: 24px;
@@ -88,24 +94,22 @@ img{
 }
 .menu{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
 }
 .menu li{
-	width: 92px;
 	font-weight: bold;
-	text-align: right;
 }
 .menu a{
 	color: #3F5D45;
 	text-decoration: none;
+	padding: 0px 30px;
+	display: block;
 }
 .menu a:hover{
 	color: #3Fa045;
 }
 .menu .shoppingcart{
-	margin-left: 79px;
-	width: 24px;
+	padding: 0px 0px 0px 49px;
 }
 .banner{
 	margin-bottom: 60px;
@@ -224,6 +228,7 @@ img{
 }
 .product img{
 	display: block;
+	width: 100%;
 }
 /* 頁碼 */
 .pages{
@@ -242,24 +247,15 @@ img{
 	text-decoration: none;
 	color: #3F5D45;
 	display: block;
-	padding: 22px 0px;
+	padding: 23px 0px;
 }
 .pages .chosen:hover{
 	background-color: #3F5D45;
 	color: #EAF0ED;
 }
 .pages .img{
-	padding: 0px 0px;
-	width: 24px;
-	height: 24px;
-	margin: 18px auto;	
+	padding: 19px 18px;
 	display: block;
-}
-.arrowleft{
-	background-image: url(../images/arrow_left.png);
-}
-.arrowright{
-	background-image: url(../images/arrow_right.png);
 }
 .pages .last{
 	border-right: 1px solid #EAF0ED;
@@ -283,24 +279,23 @@ img{
 	justify-content: space-between;
 	align-items: center;
 }
-.text{
+.subscribeTitle{
 	display: flex;
 	align-items: center;
 }
-.text img{
+.subscribeTitle img{
 	width: 40px;
 	height: 40px;
 	margin-right: 20px;
 }
-.text p{
+.subscribeTitle p{
 	font-size: 24px;
 	color: #EAF0ED;
-	display: inline;
 }
-.input{
+.subscribeForm{
 	display: flex;
 }
-.input .email{
+.subscribeForm .email{
 	width: 100%;
 	background-color: #EAF0ED;
 	color: #3F5D45;
@@ -311,10 +306,10 @@ img{
 	background-position: 20px 16px;
 	padding: 5px 5px 5px 54px;
 }
-.input .email:focus{
+.subscribeForm .email:focus{
 	background-color: #fff;
 }
-.input .submit{
+.subscribeForm .submit{
 	background-color: #FFE180;
 	padding: 15px 19px;
 	border: 1px solid #FFE180;
@@ -324,12 +319,12 @@ img{
 		flex-direction: column;
 		width: 80%;		
 	}
-	.text{
+	.subscribeTitle{
 		width: 100%;
 		margin-bottom: 33px;
 		justify-content: center;
 	}
-	.input{
+	.subscribeForm{
 		width: 100%;
 	}
 }
@@ -349,7 +344,7 @@ img{
 	margin-bottom: 30px;
 }
 .footer2{
-	align-items: center;
+	align-items: flex-end;
 }
 
 .detail{

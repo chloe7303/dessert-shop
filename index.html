@@ -14,7 +14,7 @@
             <li><a href="#">首頁</a></li>
             <li><a href="#">甜點</a></li>
             <li><a href="#">登入</a></li>
-            <li class="shoppingcart"><a href="#"><img src="images/shopping_cart.png" alt="shoppingcart"></a></li>
+            <li><a href="#" class="shoppingcart"><img src="images/shopping_cart.png" alt="shoppingcart"></a></li>
           </ul>
         </div>
         <div class="header_2">
@@ -22,10 +22,10 @@
             <img src="images/logotype-sm-dark.svg" alt="logo"><a href="#"></a>
             <img src="images/shopping_cart.png" alt="shoppingcart"><a href="#"></a>
         </div>
-        <div class="banner">
+        <div class="banner" data-aos="fade-up" data-aos-duration="800">
           <img src="images/banner.png" alt="banner">
         </div>
-        <div class="main">
+        <div class="main" data-aos="fade-right" data-aos-duration="1000">
           <div class="list">
             <h2>甜點類別</h2>
             <ul>
@@ -36,7 +36,7 @@
             </ul>
           </div>
           <ul class="product">
-            <li>
+            <li data-aos="fade-right">
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-1.png" alt="dessert">
@@ -46,7 +46,7 @@
               </div>
               <button type="button">加入購物車</button>
             </li>
-            <li>
+            <li data-aos="fade-right">
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-2.png" alt="dessert">
@@ -56,7 +56,7 @@
               </div>
               <button type="button">加入購物車</button>
             </li>
-            <li>
+            <li data-aos="fade-right">
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-3.png" alt="dessert">
@@ -66,7 +66,7 @@
               </div>
               <button type="button">加入購物車</button>
             </li>
-            <li>
+            <li data-aos="fade-right"> 
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-4.png" alt="dessert">
@@ -76,7 +76,7 @@
               </div>
               <button type="button">加入購物車</button>
             </li>
-            <li>
+            <li data-aos="fade-right">
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-5.png" alt="dessert">
@@ -86,7 +86,7 @@
               </div>
               <button type="button">加入購物車</button>
             </li>
-            <li>
+            <li data-aos="fade-right">
               <div class="sales">本日精選</div>
               <div class="favorite"><a href="#"><img src="images/favorite_border.png" alt="favorite"></a></div>
               <img src="images/p-6.png" alt="dessert">
@@ -95,41 +95,41 @@
                 <span>NT$ 450</span>
               </div>
               <button type="button">加入購物車</button>
-            </li>
+            </li data-aos="fade-right">
           </ul>
         </div>
         <ul class="pages">
-            <li><a href="#" class="img arrowleft"></a></li>
+            <li><a href="#" class="img arrowleft"><img src="images/arrow_left.png" alt="arrowleft"></a></li>
             <li><a href="#" class="chosen">1</a></li>
             <li><a href="#" class="chosen">2</a></li>
             <li><a href="#" class="chosen">3</a></li>
-            <li class="last"><a href="#" class="img arrowright"></a></li>
+            <li class="last"><a href="#" class="img arrowright"><img src="images/arrow_right.png" alt="arrowright"></a></li>
           </ul>
       </div>
-      <div class="subscribe_bg">
+      <div class="subscribe_bg" data-aos="fade-right">
         <div class="subscribe">
-          <div class="text">
+          <div class="subscribeTitle">
               <img src="images/logo-light.svg" alt="logo">
               <p>訂閱你我的甜蜜郵件</p>
           </div>
-          <div class="input">
+          <div class="subscribeForm">
               <input type="text" name="email" class="email">
               <input type="image" src="images/arrow_forward-24px.png" class="submit">
           </div>
         </div>
       </div>
-      <div class="footer_bg">
+      <div class="footer_bg" data-aos="fade-right">
        <div class="footer1">
           <div class="detail">
-              <img src="images/logotype-lg-dark.svg" alt="logo">
+              <img src="images/logotype-sm-dark.svg" alt="logo">
               <p>07-1234-5678<br>
                 sweetaste@email.com<br>
                 800 高雄市新興區幸福路 520 號
               </p>
           </div>
-          <div class="quote">
-            <p>今天是個——<br>吃甜點的好日子。</p>
-          </div>
+          <p class="quote">
+            今天是個——<br>吃甜點的好日子。
+          </p>
        </div>
        <div class="footer2">
           <ul class="icon">
@@ -139,6 +139,31 @@
           <p>© 2018 Sweetaste* All Rights Reserved</p>
        </div>
       </div>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
       
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+      </script>    
 </body>
 </html>
