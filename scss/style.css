@@ -48,9 +48,6 @@ table {
 }
 /* css reset 結束 */
 
-*{
-	/* outline: 1px solid */
-}
 *,*::before,*::after{
 	box-sizing: border-box;
 }
@@ -111,6 +108,7 @@ img{
 .menu .shoppingcart{
 	padding: 0px 0px 0px 49px;
 }
+/* banner */
 .banner{
 	margin-bottom: 60px;
 }
@@ -367,11 +365,7 @@ img{
 	line-height: 1.5;
 }
 .quote{
-	writing-mode: vertical-rl;
-	font-size: 24px;
-	font-family: 'Noto Serif TC', serif;
-	font-weight: 900;
-	line-height: 1.5;
+	width: 6%;
 }
 @media(max-width:375px){
 	.quote{

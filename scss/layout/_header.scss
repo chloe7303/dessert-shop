@@ -1,0 +1,86 @@
+.header{
+	display: flex;
+	justify-content: space-between;
+    padding: 30px 0px;
+    align-items: center;
+    position: relative;
+    @include iphone(){
+        justify-content: space-around;
+    }
+    &-toggler{
+        display: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        @include iphone(){
+            display: block;
+        }
+    }
+    &-toggler:focus{
+        outline: 0;
+    }
+    &-logo a{
+        display: block; 
+        width: 210px;
+        height: 40px;
+        background: url(../images/logo-all-dark.svg);
+        @include hide-text;
+        @include iphone(){
+            width: 110px;
+            height: 17px;
+            background: url(../images/logotype-sm-dark.svg);
+        }
+    }
+    &-navbar{
+        display: flex;
+        align-items: center;
+        &-menu{
+            display: flex;
+            align-items: center;
+            max-height: 0px;
+            @include iphone(){
+                position: absolute;
+                left: 0;
+                top: 100%;
+                width: 100%;
+                transition: all 0.8s;
+                overflow: hidden;
+                background: $white;
+                flex-direction: column;
+            }
+            li{
+                font-weight: bold;
+                @include iphone(){
+                    width: 100%;
+                }
+            }
+            li:hover{
+                @include iphone(){
+                    background-color: #EAF0ED;
+                }
+            }
+            a{
+                color: $primaryGreen;
+                text-decoration: none;
+                padding: 0px 30px;
+                display: block;
+                @include iphone(){
+                    padding: 10px 0;
+                    text-align: center;
+                }
+            }
+            a:hover{
+                color: #3Fa045;
+            }
+        }
+        &-shoppingcart{
+            padding-left: 49px;
+            @include iphone(){
+                padding-left: 0px;
+            }
+        }
+    }
+    .active{
+        max-height: 200px;
+    }
+}

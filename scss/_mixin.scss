@@ -1,0 +1,17 @@
+@mixin hide-text {
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 斷點
+@mixin pad {
+    @media (max-width:768px) {
+        @content
+    }
+}
+@mixin iphone {
+    @media (max-width: 375px) {
+        @content
+    }
+}

@@ -1,0 +1,111 @@
+.subscribe_bg{
+	background-color: #3F5D45;
+	padding: 30px 0px;
+}
+.subscribe{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    @include iphone(){
+        flex-direction: column;
+		width: 80%;	
+    }
+}
+.subscribeTitle{
+	display: flex;
+    align-items: center;
+    @include iphone(){
+        width: 100%;
+		margin-bottom: 33px;
+		justify-content: center;
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        margin-right: 20px;
+    }
+    p{
+        font-size: 24px;
+	    color: #EAF0ED;
+    }
+}
+.subscribeForm{
+    display: flex;
+    @include iphone(){
+        width: 100%;
+    }
+    .email{
+        width: 100%;
+        background-color: #EAF0ED;
+        color: #3F5D45;
+        font-size: 120%;
+        border: 1px solid #EAF0ED;
+        background-image: url(../images/mail-24px.png);
+        background-repeat: no-repeat;
+        background-position: 20px 16px;
+        padding: 5px 5px 5px 54px;
+    }
+    .email:focus{
+        background-color: #fff;
+    }
+    .submit{
+        background-color: #FFE180;
+        padding: 15px 19px;
+        border: 1px solid #FFE180;
+    }
+}
+.footer_bg{
+	background-color: #EAF0ED;
+	padding: 30px 0px;
+	color: #3F5D45;
+}
+.footer2{
+	align-items: center;
+}
+.footer1,.footer2{
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;	
+    font-weight: wrap;
+    @include iphone(){
+        width: 80%;
+		flex-direction: column;
+		align-items: start;
+    }
+}
+.footer1{
+	margin-bottom: 30px;
+}
+.detail{
+	display: flex;
+	flex-direction: column;
+    justify-content: space-between;
+    img{
+        width: 171px;
+        height: 26px;
+        @include iphone(){
+            margin-bottom: 20%;
+        }
+    }  
+}
+.quote{
+    width: 6%;
+    @include iphone(){
+        display: none;
+    }
+}
+.icon{
+    display: flex;
+    flex-direction: start;
+    @include iphone(){
+        margin-bottom: 5%;
+    }
+    img{
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+    }	
+}

@@ -1,0 +1,144 @@
+.material-icons.primaryGreen { color: #3F5D45; }
+.banner_product{
+    margin-bottom: 60px;
+    @include iphone(){
+        margin: 0px;
+    }
+}
+.main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+.list{
+	width: 30%;
+	font-size: 1.5rem; 
+    text-align: center;
+    @include iphone(){
+        width: 100%;
+    }
+    h2{
+        padding: 16px 0px;
+        color: #EAF0ED;
+        background-color: #3F5D45;
+        border: 1px solid #3F5D45;
+    }
+    a{
+        padding: 16px 0px;
+        border-bottom: 1px solid #EAF0ED;
+        border-left: 1px solid #EAF0ED;
+        border-right: 1px solid #EAF0ED;
+        text-decoration: none;
+        color: #3F5D45;
+        font-weight: bold;
+        display: block;
+    }
+    a:hover{
+        background-color: #EAF0ED;
+    }
+}
+.product{
+	width: 65%;
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    @include iphone(){
+        margin: 0 auto;
+		margin-top: $mb-3;
+		width: 85%;
+    }
+    li{
+        text-align: center;
+        margin-bottom: $mb-2;
+        width: 48.5%;
+        position: relative;
+        @include iphone(){
+            width: 100%;
+		    margin-bottom: $mb-3;
+        }
+    }
+    &-tag{
+        position: absolute;
+        left: 20px;
+        background-color: #3F5D45;
+        color: #EAF0ED;
+        writing-mode: vertical-lr;
+        letter-spacing: 4px;
+        padding: 10px 10px;
+    }
+    &-fav{
+        position: absolute;
+        right: 22px;
+        top: 19px;
+    }
+    &-text{
+        display: flex;
+        font-size: 1.25rem;
+        border-left: 1px solid #EAF0ED;
+        border-bottom: 1px solid #EAF0ED;
+        border-right: 1px solid #EAF0ED;
+        color: #3F5D45;
+        h3{
+            border-right: 1px solid #EAF0ED;
+            width: 60%;
+            padding: 5% 0%;
+        }
+        span{
+            font-weight: bold;
+            width: 40%;
+            padding: 5% 0%;
+        }
+    }
+    button{
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 5% 0%;
+        color: #3F5D45;
+        font-weight: bold;
+        background-color: #EAF0ED;
+        border: 1px solid #EAF0ED;
+    }
+    button:hover{
+        color: #EAF0ED;
+        background-color: #3F5D45;
+        border: 1px solid #3F5D45;
+    }
+    img{
+        width: 100%;
+    }
+}
+
+/* 頁碼 */
+.pages{
+	display: flex;
+	justify-content: flex-end;
+    margin-bottom: $mb-6;
+    @include iphone(){
+        justify-content: center;
+        margin-bottom: $mb-3;  
+    }
+    li{
+        width: 60px;
+        text-align: center;
+        border-top: 1px solid #EAF0ED;
+        border-bottom: 1px solid #EAF0ED;
+        border-left: 1px solid #EAF0ED; 
+    }
+    a{
+        text-decoration: none;
+        color: #3F5D45;
+        display: block;
+        padding: 19px 0px;
+    }
+    .chosen:hover{
+        background-color: #3F5D45;
+        color: #EAF0ED;
+    }
+    .img{
+        padding: 19px 18px;
+    }
+    .last{
+        border-right: 1px solid #EAF0ED;
+    }  
+}

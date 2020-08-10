@@ -1,0 +1,32 @@
+@import "reset" ;
+@import "variable" ;
+@import "mixin" ; 
+@import "layout/header" ;
+@import "layout/footer" ;
+// @import "page/index" ;
+@import "page/product" ;
+@import "page/checkoutComplete" ;
+
+*,*::before,*::after{
+	box-sizing: border-box;
+}
+body {
+	font-family: "PingFang TC", -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-size: 16px; // 預設本身就16px
+	line-height: 1.5;
+}
+h1, h2, h3, h4, h5, h6{
+	line-height: 1.2;
+}
+img{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+.container{
+	max-width: 940px;
+	margin: 0 auto;
+	@include iphone(){
+		max-width: 375px;
+	}
+}

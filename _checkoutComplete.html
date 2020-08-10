@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>付款成功</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/all.js"></script>
+</head>
+<body>
+    <div class="container">
+      <div class="header">
+        <button class="header-toggler"><img src="images/dehaze-24px.png" alt="hamicon"></button>
+        <h1 class="header-logo"><a href="index.html">公司logo</a></h1>
+        <div class="header-navbar">
+          <ul class="header-navbar-menu">
+            <li><a href="#">首頁</a></li>
+            <li><a href="#">甜點</a></li>
+            <li><a href="#">登入</a></li>
+          </ul>
+          <a href="#" class="header-navbar-shoppingcart"><img src="images/shopping_cart.png" alt="shoppingcart"></a>
+        </div>
+      </div>
+        <div class="banner" data-aos="fade-up" data-aos-duration="800">
+          <div class="banner-check">
+            <span class="material-icons primaryGreen">check_circle</span>
+            <hr class="banner-check-hr1">
+            <span class="material-icons primaryGreen">check_circle</span>
+            <hr class="banner-check-hr2">
+            <span class="material-icons primaryGreen">check_circle</span>
+          </div>
+          <img src="images/lg-paySuccess.svg" alt="paySuccess" class="banner-paySuccess">
+          <button type="button" class="banner-btn">繼續逛逛</button>
+        </div>
+        <button type="button" class="banner-btn-mobile">繼續逛逛</button>
+        </div>
+        
+        
+    </div>
+    <div class="subscribe_bg" data-aos="fade-right">
+        <div class="subscribe">
+          <div class="subscribeTitle">
+              <img src="images/logo-light.svg" alt="logo">
+              <p>訂閱你我的甜蜜郵件</p>
+          </div>
+          <div class="subscribeForm">
+              <input type="text" name="email" class="email">
+              <input type="image" src="images/arrow_forward-24px.png" class="submit">
+          </div>
+        </div>
+    </div>
+    <div class="footer_bg" data-aos="fade-right">
+       <div class="footer1">
+          <div class="detail">
+              <img src="images/logotype-sm-dark.svg" alt="logo">
+              <p>07-1234-5678<br>
+                sweetaste@email.com<br>
+                800 高雄市新興區幸福路 520 號
+              </p>
+          </div>
+          <img src="images/sm-quote.svg" alt="quote" class="quote">
+       </div>
+       <div class="footer2">
+          <ul class="icon">
+              <li><a href="#"><img src="images/ic-line@.svg" alt="line"></a></li>
+              <li><a href="#"><img src="images/ic-facebook.svg" alt="facebook"></a></li>
+          </ul>
+          <p>© 2018 Sweetaste* All Rights Reserved</p>
+       </div>
+    </div>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: 'aos-init', // class applied after initialization
+      animatedClassName: 'aos-animate', // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+      
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: 'ease', // default easing for AOS animations
+      once: true, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+      });
+    </script>    
+</body>
+</html>

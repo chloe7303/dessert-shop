@@ -1,0 +1,63 @@
+.banner{
+    height: 460px;
+    background: url(../images/pay.jpeg);
+    background-size: cover;
+    background-position: center;        
+    position: relative;
+    margin-bottom: $mb-6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include iphone(){
+        margin-bottom: 0;
+    }
+    &-check{
+        width: 190px;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 128px;
+        position: relative;
+        @include iphone(){
+            margin-top: 210px;
+        }
+        &-hr1, &-hr2{
+            position: absolute;
+            border: 1px solid $primaryGreen;
+            width: 66px;
+        }
+        &-hr1{
+            right: 20px; top: 3px;
+        }
+        &-hr2{
+            left: 20px; top: 3px;
+        }
+    }
+    &-paySuccess{
+        width: 190px;   
+        margin-top: 32px;  
+    }
+    &-btn, &-btn-mobile{
+        color: $primaryGreen;
+        background-color: $yellow;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    &-btn{
+        padding: 17px 102px;
+        margin-top: 51px;
+        @include iphone(){
+            display: none;
+        }
+    }
+    &-btn-mobile{
+        display: none;
+        @include iphone(){
+            display: block;
+            width: 100%;
+            padding: 19px;
+        }
+    }
+}
