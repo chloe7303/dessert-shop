@@ -25,7 +25,9 @@ img{
 }
 .container{
 	max-width: 940px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto; 
+	// 不寫margin: 0 auto;是因為有些container上下要設定空間
 	@include iphone(){
 		max-width: 375px;
 	}
